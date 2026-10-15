@@ -152,6 +152,9 @@ Consistent with the status above; nothing here is a promise of dates.
 
 ## Contributing
 
+> [!NOTE]
+> On Linux/macOS, set up either component with bash: `python3.12 -m venv .venv && source .venv/bin/activate`, `pip install -e ".[dev]"`, copy `.env`, `alembic upgrade head`, then `uvicorn`. For the Gateway, any `APP_ENV` other than `test` requires three distinct non-example secrets (`API_TOKEN`, `EVIDENCE_READ_API_TOKEN`, `EVIDENCE_CURSOR_SIGNING_KEY`); see `gateway/app/config.py`. PowerShell instructions in `gateway/README.md` and `core/README.md` still apply on Windows.
+
 Contributions are welcome, especially on documentation, tests and portability. Start with issues labelled [`good first issue`](https://github.com/tangwenhai839-create/qingyu/labels/good%20first%20issue) or [`help wanted`](https://github.com/tangwenhai839-create/qingyu/labels/help%20wanted), and read [CONTRIBUTING.md](CONTRIBUTING.md) and the [Code of Conduct](CODE_OF_CONDUCT.md). Questions and ideas go to [Discussions](https://github.com/tangwenhai839-create/qingyu/discussions). Report security issues privately as described in [SECURITY.md](SECURITY.md).
 
 ## History and AI-assisted development
